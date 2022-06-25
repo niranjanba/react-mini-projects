@@ -1,0 +1,108 @@
+:root {
+    --clr-primary-5: hsl(205, 78%, 60%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+}
+
+.title .underline {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--clr-primary-5);
+    margin: 0.5rem auto;
+}
+
+.reviews {
+    width: 25rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    transition: all 1s linear;
+}
+
+.img-container {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.person-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-container::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--clr-primary-5);
+    top: -3px;
+    right: -3px;
+}
+
+.quote-icon {
+    font-size: 0.5rem;
+    display: flex;
+    align-content: center;
+    background-color: var(--clr-primary-5);
+    color: white;
+    padding: 6px;
+    position: absolute;
+    top: 0.6rem;
+    left: -6px;
+    border-radius: 50%;
+}
+
+.author {
+    text-transform: capitalize;
+}
+
+.job {
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.info {
+    font-size: 0.7rem;
+}
+
+.next-btn,
+.prev-btn {
+    border: none;
+    background-color: white;
+    color: var(--clr-primary-5);
+    font-size: 1rem;
+    margin: 0.6rem;
+    cursor: pointer;
+}
+
+.random-btn {
+    border: none;
+    background-color: rgb(227, 251, 255);
+    color: var(--clr-primary-5);
+    font-weight: 700;
+    padding: 0.3rem;
+    cursor: pointer;
+}

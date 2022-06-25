@@ -1,0 +1,105 @@
+main {
+    margin: 2rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+.title .underline {
+    width: 6rem;
+    height: 0.2rem;
+    background-color: chocolate;
+    margin: 0.3rem auto;
+}
+.section-center {
+    display: grid;
+    gap: 3rem 2rem;
+    width: 90vw;
+    justify-items: center;
+}
+
+.menu-item {
+    max-width: 30rem;
+    padding: 0.2rem;
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 0.25rem solid chocolate;
+    border-radius: 3px;
+    display: block;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    margin-bottom: 0.5rem;
+}
+
+.item-info header .price {
+    color: chocolate;
+}
+
+.item-info h4 {
+    margin-bottom: 0.5rem;
+}
+.item-text {
+    word-break: break-all;
+    font-size: 0.8rem;
+}
+
+/* Categories */
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-container .btn {
+    border: none;
+    background-color: transparent;
+    color: chocolate;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    border-color: transparent;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.btn-container .btn:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-item {
+        grid-template-columns: 15rem 1fr;
+        gap: 0 1.25rem;
+    }
+    .photo {
+        height: 175px;
+    }
+}
+
+@media screen and (min-width: 978px) {
+    .section-center {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.3rem 0;
+    }
+    .photo {
+        height: 150px;
+    }
+}

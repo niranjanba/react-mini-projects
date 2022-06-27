@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.toggle-nav {
+    cursor: pointer;
+    color: rgb(95, 171, 246);
+    font-size: 1.35rem;
+    transition: all 0.2s linear;
+}
+.toggle-nav:hover {
+    color: dodgerblue;
+    transform: rotate(90deg);
+}
+
+.links a {
+    display: block;
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-weight: 500;
+}
+
+.links a:hover {
+    background: dodgerblue;
+    color: white;
+    padding-left: 1.5rem;
+}
+
+.links-container {
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.social-icons {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        padding: 0.7rem 1rem;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-icons {
+        display: flex;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: rgb(55, 212, 255);
+    }
+    .links-container {
+        height: auto;
+    }
+    .links {
+        display: flex;
+    }
+    .links a {
+        padding: 0;
+        margin: 0 0.8rem;
+        text-transform: capitalize;
+        color: black;
+        font-weight: 700;
+        transition: none;
+    }
+    .links a:hover {
+        color: dodgerblue;
+        padding: 0;
+        background: transparent;
+    }
+    .toggle-nav {
+        display: none;
+    }
+}

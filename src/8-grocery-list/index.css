@@ -1,0 +1,134 @@
+.container {
+    margin: 3rem auto;
+    padding: 0.7rem 1.5rem;
+    height: 100vh;
+    width: 80vw;
+    width: 25rem;
+    min-height: 10rem;
+    height: min-content;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.alert p {
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert .success {
+    color: green;
+    background-color: rgb(190, 231, 190);
+}
+
+.alert .danger {
+    color: rgb(210, 3, 3);
+    background-color: rgb(240, 199, 199);
+}
+
+.grocery-form {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grocery-form h3 {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #6d64a2;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control input {
+    height: 1.8rem;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    padding-left: 0.8rem;
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    align-items: center;
+    background-color: #d3cfe6;
+    color: #3725a9;
+}
+.submit-btn {
+    cursor: pointer;
+    text-align: center;
+    height: 1.8rem;
+    width: 3.5rem;
+    background-color: #483d8b;
+    color: white;
+    text-transform: capitalize;
+    border: transparent;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight: 500;
+}
+.submit-btn:hover {
+    background-color: #7563e6;
+}
+
+/* LIST */
+
+.grocery-container {
+    text-align: center;
+}
+
+.grocery-list {
+    margin-bottom: 1rem;
+}
+
+.grocery-item {
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.23rem 0;
+}
+
+.grocery-item:hover {
+    background-color: #ece7ff;
+}
+.grocery-item p {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #6d64a2;
+}
+.btn-container {
+    display: flex;
+}
+
+.edit-btn,
+.delete-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.edit-btn {
+    color: #7563e6;
+}
+.delete-btn {
+    color: rgb(201, 3, 3);
+}
+.clear-btn {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    text-transform: capitalize;
+    color: rgb(201, 3, 3);
+}

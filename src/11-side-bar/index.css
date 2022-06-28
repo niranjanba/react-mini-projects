@@ -1,0 +1,164 @@
+:root {
+    --primary-color: cornflowerblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-navbar {
+    cursor: pointer;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: none;
+    animation: bounce 2s infinite 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.605);
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+.show-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container {
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: all 0.5s linear;
+    transform: translateX(-100%);
+}
+.show-sidebar {
+    transform: translateX(0);
+}
+.sidebar-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-header .close-btn {
+    cursor: pointer;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    color: brown;
+}
+
+.links a {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s linear;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.links a:hover {
+    background-color: rgb(205, 205, 205);
+    color: rgb(94, 94, 94);
+}
+
+.links svg {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    margin: 1rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    transition: all 0.5s linear;
+}
+
+.social-links a:hover {
+    color: rgb(103, 103, 103);
+}

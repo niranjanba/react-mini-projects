@@ -1,8 +1,8 @@
-main {
+.menu-main {
     margin: 2rem;
 }
 
-.section {
+.menu-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -17,7 +17,7 @@ main {
     background-color: chocolate;
     margin: 0.3rem auto;
 }
-.section-center {
+.menu-section-center {
     display: grid;
     gap: 3rem 2rem;
     width: 90vw;
@@ -61,12 +61,12 @@ main {
 }
 
 /* Categories */
-.btn-container {
+.menu-btn-container {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.btn-container .btn {
+.menu-btn-container .menu-btn {
     border: none;
     background-color: transparent;
     color: chocolate;
@@ -79,7 +79,7 @@ main {
     cursor: pointer;
 }
 
-.btn-container .btn:hover {
+.menu-btn-container .menu-btn:hover {
     background-color: chocolate;
     color: white;
 }
@@ -95,7 +95,7 @@ main {
 }
 
 @media screen and (min-width: 978px) {
-    .section-center {
+    .menu-section-center {
         grid-template-columns: 1fr 1fr;
         gap: 1.3rem 0;
     }

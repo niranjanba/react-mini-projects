@@ -3,7 +3,7 @@ import { useGlobalContext } from "./context";
 const Navbar = () => {
     const { amount } = useGlobalContext();
     return (
-        <nav>
+        <nav className="cart-nav">
             <div className="nav-center">
                 <h3>useReducer</h3>
                 <div className="nav-container">

@@ -20,8 +20,8 @@ function App() {
     };
 
     return (
-        <main>
-            <section className="menu section">
+        <div className="menu-main">
+            <section className="menu menu-section">
                 <div className="title">
                     <h2>Our Menu</h2>
                     <div className="underline"></div>
@@ -29,7 +29,7 @@ function App() {
                 <Categories categories={categories} filterItems={filterItems} />
                 <Menu items={menuItems} />
             </section>
-        </main>
+        </div>
     );
 }
 

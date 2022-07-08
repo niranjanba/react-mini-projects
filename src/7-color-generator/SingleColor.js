@@ -13,7 +13,7 @@ function SingleColor({ index, rgb, weight, hex }) {
     }, [alert]);
     return (
         <article
-            className="color"
+            className="color color-article"
             style={{ backgroundColor: `rgb(${bgr})` }}
             onClick={() => {
                 setAlert(true);
@@ -32,7 +32,7 @@ function SingleColor({ index, rgb, weight, hex }) {
             >
                 #{hex}
             </p>
-            {alert && <p className="alert">copied to clipboard</p>}
+            {alert && <p className="color-alert">copied to clipboard</p>}
         </article>
     );
 }

@@ -15,6 +15,7 @@ function Index() {
         const res = await fetch(url);
         const data = await res.json();
         setTours(data);
+        console.log(data);
         setLoadinng(false);
     };
 
@@ -30,13 +31,13 @@ function Index() {
         return <Loading />;
     }
     return (
-        <main className="container">
+        <div className="tour-container">
             <div className={styles.title}>
-                <h1>Tour App</h1>
+                <h3>Tour App</h3>
                 <div className={styles.underline}></div>
             </div>
             <Tours tours={tours} removeTour={removeTour} />
-        </main>
+        </div>
     );
 }
 

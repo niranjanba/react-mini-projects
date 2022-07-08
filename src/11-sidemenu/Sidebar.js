@@ -8,20 +8,22 @@ function Sidebar() {
     return (
         <aside
             className={`${
-                isSidebarOpen ? "sidebar-wrapper show" : "sidebar-wrapper"
+                isSidebarOpen
+                    ? "submenu-sidebar-wrapper show"
+                    : "submenu-sidebar-wrapper"
             }`}
         >
-            <div className="sidebar">
+            <div className="submenu-sidebar">
                 <button className="close-btn" onClick={closeSidebar}>
                     <FaTimes />
                 </button>
-                <div className="sidebar-links">
+                <div className="submenu-sidebar-links">
                     {sublinks.map((item, index) => {
                         const { links, page } = item;
                         return (
                             <article key={index}>
                                 <h1>{page}</h1>
-                                <div className="sidebar-sublinks">
+                                <div className="submenu-sidebar-sublinks">
                                     {links.map((link, index) => {
                                         const { url, icon, label } = link;
 

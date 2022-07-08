@@ -17,6 +17,7 @@
     gap: 2rem;
 }
 .tour {
+    opacity: 1;
     box-shadow: 1px -4px 10px 6px rgb(0 0 0 / 30%);
     width: 25rem;
     border-radius: 3px;
@@ -31,6 +32,7 @@
 }
 
 .tourInfo {
+    opacity: 1;
     font-size: 0.9rem !important;
     display: flex;
     justify-content: space-between;

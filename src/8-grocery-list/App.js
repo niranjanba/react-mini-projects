@@ -76,13 +76,13 @@ function App() {
     }, [list]);
 
     return (
-        <section className="container">
+        <section className="grocery-main-container">
             <form className="grocery-form" onSubmit={handleSubmit}>
                 {alert.show && (
                     <Alert {...alert} removeAlert={showAlert} list={list} />
                 )}
                 <h3>grocery app</h3>
-                <div className="form-control">
+                <div className="grocery-form-control">
                     <input
                         type="text"
                         placeholder="e.g. eggs"

@@ -23,7 +23,7 @@ function App() {
 
     return (
         <>
-            <section className="container">
+            <section className="color-container">
                 <h3>Color Generator</h3>
                 <form onSubmit={handleSubmit}>
                     <input

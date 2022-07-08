@@ -14,10 +14,10 @@ function App() {
         );
     }
     return (
-        <main>
+        <div>
             <Navbar />
             <CartContainer />
-        </main>
+        </div>
     );
 }
 

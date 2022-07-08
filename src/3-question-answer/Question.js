@@ -6,8 +6,8 @@ function Question({ title, info }) {
     return (
         <article className="question">
             <header>
-                <h5>{title}</h5>
-                <button className="btn">
+                <h4>{title}</h4>
+                <button className="q-btn">
                     {showInfo ? (
                         <AiOutlineMinus
                             onClick={() => setShowInfo(!showInfo)}

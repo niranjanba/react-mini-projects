@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.container {
+.color-container {
     margin: 2rem;
     display: flex;
     gap: 1rem;
@@ -57,10 +57,11 @@ form button {
     font-weight: 500;
     text-transform: uppercase;
 }
-.alert {
+.color-alert {
     text-transform: uppercase;
     color: gray;
     font-weight: bold;
     font-size: 0.8rem;
     transition: all 1s;
+    margin: 0;
 }

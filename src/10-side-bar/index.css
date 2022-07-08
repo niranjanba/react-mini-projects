@@ -12,7 +12,7 @@ a {
     text-decoration: none;
     color: black;
 }
-main {
+.cart-main {
     min-height: 100vh;
     display: flex;
     justify-content: center;

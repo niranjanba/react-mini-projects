@@ -8,12 +8,12 @@ import "./index.css";
 
 function App() {
     return (
-        <main>
+        <div>
             <Navbar />
             <Sidebar />
             <Hero />
             <Submenu />
-        </main>
+        </div>
     );
 }
 

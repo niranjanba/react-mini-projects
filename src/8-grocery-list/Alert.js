@@ -9,7 +9,7 @@ function Alert({ type, msg, removeAlert, list }) {
         return () => clearTimeout(timeOut);
     }, [list]);
     return (
-        <div className="alert">
+        <div className="grocery-alert">
             <p className={`${type === "success" ? "success" : "danger"}`}>
                 {msg}
             </p>

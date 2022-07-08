@@ -5,9 +5,9 @@ function List({ list, removeItem, editItem }) {
             {list.map((item) => {
                 const { id, title } = item;
                 return (
-                    <article key={id} className="grocery-item">
-                        <p className="title">{title}</p>
-                        <div className="btn-container">
+                    <article key={id} className="grocery-item grocery-article">
+                        <p className="grocery-title">{title}</p>
+                        <div className="grocery-btn-container">
                             <button
                                 className="edit-btn"
                                 onClick={() => editItem(id)}

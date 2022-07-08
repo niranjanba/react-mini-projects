@@ -29,7 +29,7 @@ function App() {
     const { title, dates, duties, company } = jobs[value];
 
     return (
-        <main className="section">
+        <div className="jobs-section jobs-main">
             <div className="title">
                 <h2>Experience</h2>
                 <div className="underline"></div>
@@ -63,7 +63,7 @@ function App() {
                     })}
                 </article>
             </div>
-        </main>
+        </div>
     );
 }
 

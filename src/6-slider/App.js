@@ -27,13 +27,13 @@ function App() {
     }, [index]);
 
     return (
-        <main>
+        <div className="slider-main">
             <div className="title">
                 <h2>
                     <span>/</span> Reviews
                 </h2>
             </div>
-            <div className="section-center">
+            <div className="slider-section-center">
                 {people.map((person, pIndex) => {
                     const { id, image, name, title, quote } = person;
                     let position = "nextSlide";
@@ -47,7 +47,10 @@ function App() {
                         position = "prevSlide";
                     }
                     return (
-                        <article key={id} className={position}>
+                        <article
+                            key={id}
+                            className={`${position} slider-article`}
+                        >
                             <img
                                 src={image}
                                 alt={name}
@@ -67,7 +70,7 @@ function App() {
                     <FiChevronRight />
                 </button>
             </div>
-        </main>
+        </div>
     );
 }
 

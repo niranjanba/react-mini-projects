@@ -9,10 +9,10 @@ const CartContainer = () => {
         return (
             <section className="cart">
                 {/* cart header */}
-                <header>
+                <div>
                     <h2>your bag</h2>
                     <h4 className="empty-cart">is currently empty</h4>
-                </header>
+                </div>
             </section>
         );
     }

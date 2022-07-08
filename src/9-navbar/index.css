@@ -4,31 +4,39 @@ a {
 ul {
     list-style-type: none;
 }
-
-nav {
+body {
+    background-color: inherit;
+}
+.navbar {
     background-color: white;
     box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-.nav-header {
+.navbar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    text-transform: capitalize;
 }
 
-.toggle-nav {
+.navbar-toggle {
     cursor: pointer;
     color: rgb(95, 171, 246);
     font-size: 1.35rem;
     transition: all 0.2s linear;
 }
-.toggle-nav:hover {
+.navbar-toggle.rotate {
     color: dodgerblue;
     transform: rotate(90deg);
 }
 
-.links a {
+.navbar-header svg,
+.navbar-social-icons svg {
+    fill: dodgerblue;
+}
+
+.navbar-links a {
     display: block;
     color: rgb(92, 92, 92);
     font-size: 1rem;
@@ -38,43 +46,43 @@ nav {
     font-weight: 500;
 }
 
-.links a:hover {
+.navbar-links a:hover {
     background: dodgerblue;
     color: white;
     padding-left: 1.5rem;
 }
 
-.links-container {
+.navbar-links-container {
     overflow: hidden;
     transition: all 0.3s linear;
 }
 
-.social-icons {
+.navbar-social-icons {
     display: none;
 }
 
 @media screen and (min-width: 800px) {
-    .nav-center {
+    .navbar-center {
         padding: 0.7rem 1rem;
         width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .social-icons {
+    .navbar-social-icons {
         display: flex;
     }
-    .social-icons a {
+    .navbar-social-icons a {
         margin: 0 0.5rem;
         color: rgb(55, 212, 255);
     }
-    .links-container {
+    .navbar-links-container {
         height: auto;
     }
-    .links {
+    .navbar-links {
         display: flex;
     }
-    .links a {
+    .navbar-links a {
         padding: 0;
         margin: 0 0.8rem;
         text-transform: capitalize;
@@ -82,12 +90,12 @@ nav {
         font-weight: 700;
         transition: none;
     }
-    .links a:hover {
+    .navbar-links a:hover {
         color: dodgerblue;
         padding: 0;
         background: transparent;
     }
-    .toggle-nav {
+    .navbar-toggle {
         display: none;
     }
 }

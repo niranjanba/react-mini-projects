@@ -1,6 +1,6 @@
 import "./index.css";
 
-import { FaBars, FaTwitter } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { links, social } from "./data";
 import { useEffect, useRef, useState } from "react";
 
@@ -12,6 +12,7 @@ function App() {
 
     useEffect(() => {
         const height = linksRef.current.getBoundingClientRect().height;
+        console.log(height);
 
         if (isToggle) {
             linksContainerRef.current.style.height = `${height}px`;
@@ -21,17 +22,17 @@ function App() {
     }, [isToggle]);
 
     return (
-        <nav>
-            <div className="nav-center">
-                <div className="nav-header">
-                    <h2>Nav Bar</h2>
+        <nav className="navbar">
+            <div className="navbar-center">
+                <div className="navbar-header">
+                    <h2>navbar Bar</h2>
                     <FaBars
-                        className={`toggle-nav`}
+                        className={`navbar-toggle ${isToggle && "rotate"}`}
                         onClick={() => setIsToggle(!isToggle)}
                     />
                 </div>
-                <div className="links-container" ref={linksContainerRef}>
-                    <ul className="links" ref={linksRef}>
+                <div className="navbar-links-container" ref={linksContainerRef}>
+                    <ul className="navbar-links" ref={linksRef}>
                         {links.map((link, index) => {
                             const { url, text } = link;
                             return (
@@ -42,7 +43,7 @@ function App() {
                         })}
                     </ul>
                 </div>
-                <ul className="social-icons">
+                <ul className="navbar-social-icons">
                     {social.map((item, index) => {
                         const { icon, url } = item;
                         return (

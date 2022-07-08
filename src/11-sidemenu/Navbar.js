@@ -16,16 +16,19 @@ function Navbar() {
         if (!e.target.classList.contains("link-btn")) closeSubmenu();
     };
     return (
-        <nav className="nav" onMouseOver={handleSubmenu}>
-            <div className="nav-center">
-                <div className="nav-header">
+        <nav className="submenu-nav" onMouseOver={handleSubmenu}>
+            <div className="submenu-nav-center">
+                <div className="submenu-nav-header">
                     <img src={logo} className="logo" alt="stripe" />
-                    <button className="btn toggle-btn" onClick={openSidebar}>
+                    <button
+                        className="submenu-btn toggle-btn"
+                        onClick={openSidebar}
+                    >
                         <FaBars />
                     </button>
                 </div>
 
-                <ul className="nav-links">
+                <ul className="submenu-nav-links">
                     <li>
                         <button
                             className="link-btn"
@@ -51,7 +54,7 @@ function Navbar() {
                         </button>
                     </li>
                 </ul>
-                <button className="btn signin-btn">sign in</button>
+                <button className="submenu-btn signin-btn">sign in</button>
             </div>
         </nav>
     );

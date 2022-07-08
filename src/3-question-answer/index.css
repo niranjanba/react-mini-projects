@@ -45,7 +45,7 @@ header {
     font-size: 0.8rem;
 }
 
-header .btn {
+header .q-btn {
     border: none;
     background-color: rgb(230, 230, 230);
     color: blueviolet;

@@ -6,8 +6,12 @@ import data from "./data";
 import "./index.css";
 
 function App() {
-    const [people, setPeople] = useState(data);
+    const [people, setPeople] = useState([]);
     const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        setPeople(data);
+    }, []);
 
     useEffect(() => {
         const lastIndex = people.length - 1;

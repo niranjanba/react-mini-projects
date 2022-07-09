@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import List from "./List";
 
 import "./index.css";
@@ -59,10 +59,13 @@ function App() {
         setList([]);
     };
 
-    const removeItem = (id) => {
-        showAlert(true, "item removed", "danger");
-        setList(list.filter((item) => item.id !== id));
-    };
+    const removeItem = useCallback(
+        (id) => {
+            showAlert(true, "item removed", "danger");
+            setList(list.filter((item) => item.id !== id));
+        },
+        [list]
+    );
 
     const editItem = (id) => {
         const specificItem = list.find((item) => item.id === id);

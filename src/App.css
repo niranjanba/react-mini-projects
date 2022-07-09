@@ -38,6 +38,7 @@ html {
     row-gap: 3rem;
     column-gap: 4rem;
     margin: 3rem;
+    justify-content: center;
 }
 .app img {
     width: 100%;

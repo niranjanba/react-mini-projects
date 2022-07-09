@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "./data";
 import "./index.css";
 import Question from "./Question";
 
 function App() {
-    const [questions, setQuestion] = useState(data);
+    const [questions, setQuestion] = useState([]);
+    useEffect(() => {
+        setQuestion(data);
+    }, []);
     return (
         <main>
             <div className="container">

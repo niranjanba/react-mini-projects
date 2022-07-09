@@ -1,4 +1,4 @@
-import React, { useState, useContext, useReducer, useEffect } from "react";
+import React, { useContext, useReducer, useEffect } from "react";
 import cartItems from "./data";
 import reducer from "./reducer";
 
@@ -13,7 +13,7 @@ const initialState = {
 };
 
 const AppProvider = ({ children }) => {
-    const [cart, setCart] = useState(cartItems);
+    // const [cart, setCart] = useState(cartItems);
 
     const [state, dispatch] = useReducer(reducer, initialState);
 

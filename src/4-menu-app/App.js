@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Categories from "./Categories.js";
 import items from "./data.js";
 import "./index.css";
@@ -8,7 +8,11 @@ const allCategory = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
     const [menuItems, setMenuItems] = useState(items);
-    const [categories, setCategories] = useState(allCategory);
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        setCategories(allCategory);
+    }, []);
 
     const filterItems = (category) => {
         if (category === "all") {

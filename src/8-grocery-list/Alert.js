@@ -7,7 +7,7 @@ function Alert({ type, msg, removeAlert, list }) {
         }, 2000);
 
         return () => clearTimeout(timeOut);
-    }, [list]);
+    }, [list, removeAlert]);
     return (
         <div className="grocery-alert">
             <p className={`${type === "success" ? "success" : "danger"}`}>

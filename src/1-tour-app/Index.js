@@ -15,7 +15,6 @@ function Index() {
         const res = await fetch(url);
         const data = await res.json();
         setTours(data);
-        console.log(data);
         setLoadinng(false);
     };
 

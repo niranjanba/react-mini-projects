@@ -6,7 +6,6 @@ function SingleColor({ index, rgb, weight, hex }) {
 
     useEffect(() => {
         const timout = setTimeout(() => {
-            console.log("hello");
             setAlert(false);
         }, 3000);
         return () => clearTimeout(timout);

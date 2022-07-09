@@ -25,6 +25,7 @@ import navbar from "./images/navbar.png";
 import sidebar from "./images/sidebar.png";
 import submenu from "./images/submenu.png";
 import cart from "./images/cart-app.png";
+import cocktailDB from "./images/cocktaildb.png";
 
 const apps = [
     {
@@ -110,6 +111,12 @@ const apps = [
         element: <Cartapp />,
         path: "/cart-app",
         image: cart,
+    },
+    {
+        id: 13,
+        title: "Cocktail App",
+        path: "https://niranjanba.github.io/cocktaildb-app/",
+        image: cocktailDB,
     },
 ];
 

@@ -15,7 +15,6 @@ function App() {
         const data = await resp.json();
         setJobs(data);
         setLoading(false);
-        console.log(data);
     };
 
     useEffect(() => {

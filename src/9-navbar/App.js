@@ -12,7 +12,6 @@ function App() {
 
     useEffect(() => {
         const height = linksRef.current.getBoundingClientRect().height;
-        console.log(height);
 
         if (isToggle) {
             linksContainerRef.current.style.height = `${height}px`;

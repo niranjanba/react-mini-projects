@@ -12,14 +12,21 @@ function Home() {
 
             <div className="apps-container">
                 {data.map((app, index) => {
-                    const { title, id, path, image } = app;
-                    return (
+                    const { title, id, path, image, element } = app;
+                    return element ? (
                         <Link key={index} to={path}>
                             <div key={id} className="app">
                                 <img src={image} alt={title} />
                                 <h4>{title}</h4>
                             </div>
                         </Link>
+                    ) : (
+                        <a href={path}>
+                            <div key={id} className="app">
+                                <img src={image} alt={title} />
+                                <h4>{title}</h4>
+                            </div>
+                        </a>
                     );
                 })}
             </div>

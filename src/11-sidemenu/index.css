@@ -204,7 +204,6 @@ Stripe Styles
 @media screen and (min-width: 1200px) {
     .hero-center {
         grid-template-columns: 2fr 1fr;
-        align-items: end;
         padding-bottom: 12vh;
     }
     .hero-info h2 {
